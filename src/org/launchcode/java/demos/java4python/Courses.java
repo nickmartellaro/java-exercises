@@ -8,17 +8,28 @@ import java.util.ArrayList;
 public class Courses {
 
     private String courseTitle;
-    private final Integer courseCredits;
+//    private final Integer courseCredits;
     public ArrayList<String> enrolledStudents;
 
-    public String getEnrolledStudents(String aStudent) {
-
-        return enrolledStudents.getName(aStudent);
+    public String getCourseTitle() {
+        return courseTitle;
     }
 
-    public void setEnrolledStudents(String aStudent) {
-        enrolledStudents.add(setName(astudent));
-
+    public void setCourseTitle(String courseTitle) {
+        this.courseTitle = courseTitle;
     }
+
+//    public Integer getCourseCredits() {
+//        return courseCredits;
+//    }
+
+    public ArrayList<String> getEnrolledStudents() {
+        return enrolledStudents;
+    }
+
+    public void setEnrolledStudents(ArrayList<String> enrolledStudents) {
+        this.enrolledStudents = enrolledStudents;
+    }
+}
 }
 

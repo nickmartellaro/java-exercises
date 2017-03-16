@@ -10,12 +10,12 @@ public class ArrayListExercise {
         int sum = 0;
 
         for (int i = 0; i < 10; i++) {
-            num_list.add(i);
+                num_list.add(i);
         }
 
-        for (int l : num_list) {
-            if (l / 2) {
-                sum += l;
+        for (int l = 0; l < 10; l++) {
+            if (num_list.get(l) % 2 == 0) {
+                sum += num_list.get(l);
             }
         }
         System.out.println(sum);
@@ -25,4 +25,4 @@ public class ArrayListExercise {
     }
 
 
-}
+
